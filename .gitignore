@@ -1,10 +1,9 @@
 target/
-.idea/
+.idea
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 .kotlin
-*.iml
 out/
 
 ### IntelliJ IDEA ###
