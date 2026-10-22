@@ -5,7 +5,8 @@ import java.io.*;
 public class Printer {
 
     public void printSomething(String something) {
-        try (BufferedWriter bw = new BufferedWriter(new PrintWriter(System.out))) {
+        try {
+            BufferedWriter bw = new BufferedWriter(new PrintWriter(System.out));
             bw.write(something);
         } catch (IOException e) {
             throw new RuntimeException(e);
