@@ -8,8 +8,9 @@ public class Printer {
         try {
             BufferedWriter bw = new BufferedWriter(new PrintWriter(System.out));
             bw.write(something);
+            bw.flush();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("IOException");
         }
     }
 }
